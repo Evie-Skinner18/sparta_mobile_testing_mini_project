@@ -1,0 +1,3 @@
+class TextNotePage
+
+end

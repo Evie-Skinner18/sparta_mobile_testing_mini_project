@@ -8,6 +8,7 @@
 5. Run the command ``cucumber``
 
 ## What has Been Tested?
+The most high-priority functions of the app have been tested first: I decided that these are the ability of the user to open the app, add a new text note and add a new checklist. Thereafter, the next highest priority cases were the user's ability to edit their text note, and add or delete items from their checklist.
 
 
 
