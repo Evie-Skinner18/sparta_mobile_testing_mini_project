@@ -1,5 +1,6 @@
 # @open_app
 Given("I can open the app") do
+  homepage.click_skip
   homepage.check_home_page
 end
 
