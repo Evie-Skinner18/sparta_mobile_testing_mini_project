@@ -15,7 +15,7 @@ The most high-priority functions of the app have been tested first: I decided th
 ## Tools and Technologies
 - This automated test framework has been built using Selenium WebDriver and the Appium server. I have written the use cases for my tests in Gherkin syntax with Cucumber as my test runner.
 - I have used Android Studio to help me run the tests, by using the device emulator which simulates the application running on an Android device and operating system of my choosing.
-- The emulator I have used throughout the project is the Nexus S, using Android Oreo.
+- The emulator I have used throughout the project is the Nexus 6P, using Android Oreo.
 
 
 ## OOP Approach

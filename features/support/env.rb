@@ -1,7 +1,7 @@
 require 'appium_lib'
 require 'cucumber'
 #require the superclass or module
-require_relative '../../lib/budget_app'
+require_relative '../../lib/color_note_app'
 
 
 #options must be in right format. It will sometimes break!
@@ -12,7 +12,7 @@ def opts
     caps: {
       platformName: 'Android',
       deviceName: 'emulator5554',
-      app: './app/budgetwatch.apk'
+      app: './app/colorNote.apk'
     }
   }
 end

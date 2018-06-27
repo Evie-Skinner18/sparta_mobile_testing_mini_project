@@ -7,7 +7,7 @@ Feature: I am able to make a new note
     When I click on Add Note
     Then the Add Note box opens
 
-@text_note
+@add_text_note
   Scenario: I am able to add a text note
     Given I can open the app
     When I click on Add Note
@@ -17,7 +17,7 @@ Feature: I am able to make a new note
     And I save the note
     Then my note can be seen on the homepage
 
-@to_do_list
+@add_to_do_list
   Scenario: I am able to add a to-do list note
     Given I can open the app
     When I click on Add Note
