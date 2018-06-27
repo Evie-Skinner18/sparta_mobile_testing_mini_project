@@ -1,6 +1,6 @@
 # @open_app
 Given("I can open the app") do
-  pending # Write code here that turns the phrase above into concrete actions
+  homepage.check_home_page
 end
 
 When("I click on Add Note") do

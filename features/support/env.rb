@@ -12,7 +12,9 @@ def opts
     caps: {
       platformName: 'Android',
       deviceName: 'emulator5554',
-      app: './app/colorNote.apk'
+      app: './app/colorNote.apk',
+      # automatically accept all system permission requests!
+      'autoGrantPermissions': true,
     }
   }
 end
