@@ -13,22 +13,23 @@ class Homepage
 
   def click_skip
     @driver.alert_click('Skip')
-    puts "skip button clicked!"
   end
 
   def check_home_page
     $driver.background_app(1)
     @driver.find(COLOR_NOTE_LOGO).displayed?
-    puts "homepage found!"
   end
 
   def click_add_button
     @driver.find_element(:id, ADD_NOTE_BUTTON).click
-    puts "add button clicked!"
   end
 
   def check_add_note_box
     @driver.find_element(:id, ADD_TEXT_NOTE_OPTION).displayed?
+  end
+
+  def select_text_note
+    @driver.find_element(:id, ADD_TEXT_NOTE_OPTION).click
   end
 
 end

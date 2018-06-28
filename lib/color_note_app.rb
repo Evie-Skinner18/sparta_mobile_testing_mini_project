@@ -13,11 +13,11 @@ module ColorNoteApp
   end
 
   def text_note_page
-    TextNotePage.new
+    TextNotePage.new($driver)
   end
 
   def to_do_list_page
-    ToDoListPage.new
+    ToDoListPage.new($driver)
   end
 
   #open the door to the class

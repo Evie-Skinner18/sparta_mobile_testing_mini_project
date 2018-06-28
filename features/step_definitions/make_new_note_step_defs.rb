@@ -14,11 +14,11 @@ end
 
 # @add_text_note
 And("I select Text") do
-  pending # Write code here that turns the phrase above into concrete actions
+  homepage.select_text_note
 end
 
 And("I enter some text") do
-  pending # Write code here that turns the phrase above into concrete actions
+  text_note_page.edit_text_note_title
 end
 
 And("I save the note") do
