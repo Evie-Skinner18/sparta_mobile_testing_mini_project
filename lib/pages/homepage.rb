@@ -5,7 +5,7 @@ class Homepage
   HOME_PAGE_TITLE = 'com.socialnmobile.dictapps.notepad.color.note:id/empty'
   COLOR_NOTE_LOGO = 'com.socialnmobile.dictapps.notepad.color.note:id/logo_image'
   ADD_NOTE_BUTTON = 'com.socialnmobile.dictapps.notepad.color.note:id/main_btn1'
-  # ADD_NOTE_BOX =
+  ADD_TEXT_NOTE_OPTION = 'com.socialnmobile.dictapps.notepad.color.note:id/text'
 
   def initialize(driver)
     @driver = driver
@@ -28,7 +28,7 @@ class Homepage
   end
 
   def check_add_note_box
-
+    @driver.find_element(:id, ADD_TEXT_NOTE_OPTION).displayed?
   end
 
 end

@@ -9,7 +9,7 @@ When("I click on Add Note") do
 end
 
 Then("the Add Note box opens") do
-  pending # Write code here that turns the phrase above into concrete actions
+  homepage.check_add_note_box
 end
 
 # @add_text_note
