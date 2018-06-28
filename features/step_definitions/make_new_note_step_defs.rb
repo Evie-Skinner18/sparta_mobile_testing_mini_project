@@ -19,14 +19,16 @@ end
 
 And("I enter some text") do
   text_note_page.edit_text_note_title
+  text_note_page.edit_text_note_body
 end
 
 And("I save the note") do
-  pending # Write code here that turns the phrase above into concrete actions
+  text_note_page.save_text_note
+  text_note_page.save_text_note
 end
 
 Then("my note can be seen on the homepage") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(homepage.check_note_displayed).to eq('Hello world!')
 end
 
 
