@@ -5,7 +5,7 @@ Given("I can open the app") do
 end
 
 When("I click on Add Note") do
-  pending # Write code here that turns the phrase above into concrete actions
+  homepage.click_add_button
 end
 
 Then("the Add Note box opens") do
