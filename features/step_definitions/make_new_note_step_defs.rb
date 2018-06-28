@@ -34,11 +34,12 @@ end
 
 # @add_to_do_list
 And("I select Checklist") do
-  pending # Write code here that turns the phrase above into concrete actions
+  homepage.select_checklist
 end
 
 And("I create my to-do list") do
-  pending # Write code here that turns the phrase above into concrete actions
+  to_do_list_page.edit_checklist_title
+  to_do_list_page.add_a_to_do
 end
 
 And("I save the to-do list") do

@@ -7,7 +7,7 @@ class Homepage
   ADD_NOTE_BUTTON = 'com.socialnmobile.dictapps.notepad.color.note:id/main_btn1'
   ADD_TEXT_NOTE_OPTION = 'com.socialnmobile.dictapps.notepad.color.note:id/text'
   NEW_NOTE_ON_HOMEPAGE = 'com.socialnmobile.dictapps.notepad.color.note:id/title'
-  # @new_note_text = 'Hello world!'
+  ADD_CHECKLIST_OPTION = '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]'
 
   def initialize(driver)
     @driver = driver
@@ -36,6 +36,10 @@ class Homepage
 
   def check_note_displayed
     @driver.find_element(:id, NEW_NOTE_ON_HOMEPAGE).text
+  end
+
+  def select_checklist
+    @driver.find_element(:xpath, ADD_CHECKLIST_OPTION).click
   end
 
 end
